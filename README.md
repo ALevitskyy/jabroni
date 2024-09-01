@@ -1,6 +1,6 @@
 # jabroni
 
-Scraping vacancies from internet
+Scraping vacancies from the internet
 
 Helped me to find a job, may help you
 
@@ -8,7 +8,7 @@ The code uses search engines to search for jobs indexed on certain job board pro
 
 Then it goes to those specific job board providers and scrapes all jobs from there
 
-Finally, using some very simple NLP the code ranks all the jobs and creates a spreadsheet with all the most interesting ones
+Finally, using some straightforward NLP the code ranks all the jobs and creates a spreadsheet with all the most interesting ones
 
 ## How to run
 ```
@@ -31,12 +31,14 @@ ranker.py - line 8, change weights and terms based on your needs
 
 ranker.py - line 86, can change n=2 to different values if you want more than two jobs per company
 
+ranker.py - line 73-74, tweak geography keywords to your desired location
+
 ## Why async?
 
 So that the code runs easily both in a Jupyter Notebook and as a script
 
-When using Jupyter Notebook no need to wrap function calls into ```asyncio.run()```
+When using Jupyter Notebook, there is no need to wrap function calls into ```asyncio.run()```
 
 Developing in Jupyter Notebook helps me to see all intermediate states of the browser
 
-and ability to pause at any given time
+and the ability to pause at any given time
